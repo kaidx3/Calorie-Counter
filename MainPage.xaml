@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalorieCounter.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25">
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                VerticalOptions="End" 
+                Spacing="10"
+                Margin="0, 20, 0, 0">
+
+                <Button
+                    x:Name="Meal"
+                    Text="Meal"
+                    Clicked="OnMealClicked"
+                    HorizontalOptions="Center" 
+                    WidthRequest="90"
+                    BorderWidth="0"/>
+
+                <Button
+                    x:Name="Day"
+                    Text="Day"
+                    Clicked="OnDayClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="90"
+                    BorderWidth="0"/>
+
+                <Button
+                    x:Name="Timeline"
+                    Text="Timeline"
+                    Clicked="OnTimelineClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="90"
+                    BorderWidth="0"/>
+
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="CaloriesLabel"
+                Text="Total Calories: 0"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                VerticalOptions="End" 
+                Spacing="10"
+                Margin="0, 30, 0, 0">
+
+                <Button
+                    x:Name="RemoveBtn"
+                    Text="-"
+                    Clicked="OnRemoveClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="60"
+                    BorderWidth="0"/>
+
+                <Button
+                    x:Name="ClearBtn"
+                    Text="Clear"
+                    Clicked="OnClearClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="80"
+                    BorderWidth="0"/>
+
+                <Button
+                    x:Name="CounterBtn"
+                    Text="+"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="60"
+                    BorderWidth="0"/>
+
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="FinishBtn"
+                Text="Complete Meal"
+                Clicked="OnFinishBtnClicked"
+                HorizontalOptions="Center"
+                BorderWidth="0"
+                WidthRequest="140"/>
+
+            <Button
+                x:Name="FillerBtn"
+                Text="Complete Meal"
+                HorizontalOptions="Center"
+                BackgroundColor="Black"
+                BorderWidth="0"
+                IsVisible="false"
+                TextColor="Black"
+                WidthRequest="140"/>
+
+            <Label
+                x:Name="MealsList" 
+                HorizontalOptions="Center"
+                FontSize="18" 
+                HorizontalTextAlignment="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
