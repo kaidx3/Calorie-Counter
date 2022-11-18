@@ -1,1 +1,0 @@
-C:\Users\kaide\Desktop\Projects\Personal\CalorieCounter\CalorieCounter.csproj;x64
